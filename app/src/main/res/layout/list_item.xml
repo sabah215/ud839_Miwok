@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/word_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/textContainer_linearLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/miwok_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                tools:text="lutti"/>
+
+            <TextView
+                android:id="@+id/default_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/miwok_textView"
+                android:textColor="@android:color/white"
+                tools:text="one" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/playAudio_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_arrow_white_24dp"
+            android:layout_alignParentRight="true"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
